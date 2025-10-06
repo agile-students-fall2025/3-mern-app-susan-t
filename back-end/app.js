@@ -87,7 +87,7 @@ app.get('/about', async (req, res) => {
       bio: [
         'Hi, I’m Susan. I am a senior at NYU studying Computer Science, with minors in Web Design and Development as well as Computer Science Education. My main passion lies in the intersection between Computer Science and Education. Whether it be teaching or curriculum development, I find that as technology advances, the prevalence of computer science increases. With CS being multi-disciplinary and relevant in many fields, it provides an alternative route and learning style for students to engage in.',
         'For fun I enjoy reading books, taking walks throughout the city, and trying new restaurants. I greatly appreciate romance novels as well as anything that involves time traveling! My favorite walking spots include the numerous parks in Wisconsin as well as Central Park and Little Island in Manhattan. There are so many restaurants that I would recommend but my favorite of all time has to be Thai Villa near union square.',
-        'Not only that, but I have a huge family of 10 and I find that it helps me to stay motivated and focused especially in so much chaos.'
+        'Not only that, but I have a huge family of 10. I have my parents, 2 brothers, and 5 sisters. We are from Milwaukee, Wisconsin. However, my parents originally immigrated from Laos in 1995. In having such a big family and extended family, I find that it helps me to stay motivated and focused especially in so much chaos. It is so rewarding being able to have so many supporters through my college journey!'
       ],
       photo: '/img/susan-pic.jpeg',
       status: 'all good',
