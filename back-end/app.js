@@ -78,5 +78,27 @@ app.post('/messages/save', async (req, res) => {
   }
 })
 
+// a route to handle fetching About Us information
+app.get('/about', async (req, res) => {
+  try {
+    res.json({
+      name: 'Susan Thao',
+      bio: [
+        'Hi, I’m Susan. I am a senior at NYU studying Computer Science, with minors in Web Design and Development as well as Computer Science Education. My main passion lies in the intersection between Computer Science and Education. Whether it be teaching or curriculum development, I find that as technology advances, the prevalence of computer science increases. With CS being multi-disciplinary and relevant in many fields, it provides an alternative route and learning style for students to engage in.',
+        'For fun I enjoy reading books, taking walks throughout the city, and trying new restaurants. I greatly appreciate romance novels as well as anything that involves time traveling! My favorite walking spots include the numerous parks in Wisconsin as well as Central Park and Little Island in Manhattan. There are so many restaurants that I would recommend but my favorite of all time has to be Thai Villa near union square.',
+        'Not only that, but I have a huge family of 10 and I find that it helps me to stay motivated and focused especially in so much chaos.'
+      ],
+      photo: '/img/susan-pic.jpeg',
+      status: 'all good',
+    })
+  } catch (err) {
+    console.error(err)
+    res.status(400).json({
+      error: err,
+      status: 'failed to retrieve About Us information',
+    })
+  }
+})
+
 // export the express app we created to make it available to other modules
 module.exports = app // CommonJS export style!
