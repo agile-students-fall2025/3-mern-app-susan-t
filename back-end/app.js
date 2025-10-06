@@ -82,6 +82,7 @@ app.post('/messages/save', async (req, res) => {
 app.get('/about', async (req, res) => {
   try {
     res.json({
+      pageName: 'About Us',
       name: 'Susan Thao',
       bio: [
         'Hi, I’m Susan. I am a senior at NYU studying Computer Science, with minors in Web Design and Development as well as Computer Science Education. My main passion lies in the intersection between Computer Science and Education. Whether it be teaching or curriculum development, I find that as technology advances, the prevalence of computer science increases. With CS being multi-disciplinary and relevant in many fields, it provides an alternative route and learning style for students to engage in.',
